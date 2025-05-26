@@ -1,0 +1,27 @@
+@use 'helpers' as *;
+
+:root {
+    --color-light: #FFFFFF;
+
+    --color-dark: #323232;
+
+    --color-gray: #c5c5c5;
+
+    --color-accent: #f3b03d;
+
+    --border: #{rem(1)} solid var(--color-light);
+
+    --border-radius-small: #{rem(10)};
+    --border-radius-big: #{rem(15)};
+
+    --font-family: 'Rubik', sans-serif;
+
+    --container-width: #{rem(1400)};
+    --container-padding-x: #{rem(20)};
+
+    @include laptop {
+        --container-width: #{rem(1280)};
+    }
+
+    --transition-duration: 0.2s; 
+}
