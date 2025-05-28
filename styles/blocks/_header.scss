@@ -85,10 +85,6 @@
             @include mobile {
                 @include fluid-text(30);
             }
-
-            &.is-active {
-                color: var(--color-accent);
-            }
         }
     }
 }

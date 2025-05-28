@@ -3,7 +3,7 @@
 .search {
   background: 
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)), 
-    url('../../images/header-bg.avif') center/cover;
+    url('../../images/header-bg.avif') center/cover no-repeat;
  
   &__main {
     @include flex-center;
@@ -17,7 +17,6 @@
 
   &__title {
     padding-top: rem(249);
-    padding-inline: rem(265);
   }  
 
   &__subtitle {
@@ -29,7 +28,7 @@
   &__select {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: self-end;
     column-gap: rem(30);
     padding: rem(30) rem(50);
     margin-bottom: rem(223);
@@ -45,16 +44,36 @@
     }
 
     &-group {
-      @include fluid-text(28, 24)
+      @include fluid-text(28, 24);
+    }
+
+    &-text {
+      color: var(--color-light);
     }
     
     &-items {
       @include fluid-text(24, 18);
       
+      
       width: 100%;
+      padding: rem(12) rem(40) rem(12) rem(15);
       color: rgba(255, 255, 255, 0.5);
       background-color: transparent;
       border-bottom: var(--border);
+      border-radius: var(--border-radius-small);
+      appearance: none;
+      cursor: pointer;
+      transition-duration: var(--transition-duration);
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 rem(2) rgba(255, 255, 255, 0.2);
+      }
+
+      background-image: url('../../icons/vector.svg');
+      background-repeat: no-repeat;
+      background-position: right rem(15) center;
+      background-size: rem(12) rem(8);
     }
 
     &-button {
@@ -69,6 +88,7 @@
       text-transform: uppercase;
       border: var(--border);
       border-radius: var(--border-radius-small);
+      transition-duration: var(--transition-duration);
 
       @include mobile {
         width: 100%;

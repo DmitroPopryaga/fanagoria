@@ -1,0 +1,35 @@
+@use '../helpers' as *;
+
+.soc1als {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(30);
+
+  @include mobile {
+    row-gap: rem(10);
+  }
+
+  &__logo {
+    max-width: fluid(477, 292);
+  }
+
+  &__list { 
+    display: flex;
+    justify-content: start;
+    gap: rem(30);
+
+    @include mobile {
+      
+    }
+  }
+
+  &__link {
+    @include flex-center;
+    @include square(rem(65));
+
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    border-radius: 50%;
+    box-shadow: rem(3) rem(5) rem(20) 0 rgba(0, 0, 0, 0.07);
+  }
+}
