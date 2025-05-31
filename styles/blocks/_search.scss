@@ -85,19 +85,11 @@
       color: var(--color-light);
       background-color: transparent;
       font-weight: 700;
-      text-transform: uppercase;
       border: var(--border);
-      border-radius: var(--border-radius-small);
-      transition-duration: var(--transition-duration);
 
       @include mobile {
         width: 100%;
-      }
-
-      @include hover {
-        background-color:var(--color-accent);
-      }
-      
+      }  
     }
   }
 }

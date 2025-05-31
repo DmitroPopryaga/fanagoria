@@ -1,5 +1,29 @@
 @use '../helpers' as *;
 
 .button {
-  border-radius: rem(10);
+  @include fluid-text(20, 19);
+
+  padding-block: fluid(20, 10);
+  padding-inline: fluid(40, 15);
+  background-color: var(--color-light);
+  font-size: 600;
+  text-transform: uppercase;
+  border: rem(1) solid var(--color-dark);
+  border-radius: var(--border-radius-small);
+  transition-duration: var(--transition-duration);
+
+    @include hover {
+      background-color: var(--color-accent);
+    }
+
+
+  &-accent {
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    border: none;
+
+    @include hover {
+      background-color: var(--color-dark);
+    }
+  }
 }

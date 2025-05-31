@@ -1,0 +1,88 @@
+@use '../helpers' as *;
+
+.offer {
+  &__header {
+    &-link {
+      @include fluid-text(38, 19);
+
+      padding-top: fluid(149, 50);
+
+      @include mobile {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &-menu {
+      display: flex;
+      justify-content: space-between;
+      padding-top: fluid(15, 7);
+
+      @include mobile {
+        justify-content: center;
+      }
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: fluid(30, 15);
+    padding-top: fluid(50, 20);
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-inner {
+      position: relative;
+    }
+
+    &-image {
+      place-self: center;
+      border-radius: rem(15) rem(15) 0 0;
+    }
+
+    &-like {
+      position: absolute;
+      top: 10%;
+      left: 85%;
+      transform: -90% -15%;
+      color: var(--color-light);
+
+      &:active {
+        color: var(--color-accent);
+        background-color: var(--color-accent);
+      }
+    }
+
+    &-wrapper {
+      padding-inline: fluid(15, 3);
+    }
+
+    &-info {
+      @include fluid-text(19, 9);
+
+      display: flex;
+      justify-content: space-between;
+      padding-top: fluid(15, 10);
+      color: var(--color-gray);
+      border-top: rem(1) solid var(--color-gray);
+    }
+
+    &-price {
+      @include fluid-text(16, 9);
+      
+      display: flex;
+      justify-content: space-between;
+      padding-top: fluid(50, 15);
+      padding-bottom: fluid(15, 5);
+      font-weight: 500;
+
+      &--cost {
+        @include fluid-text (24, 10);
+      }
+    }
+
+  }
+}

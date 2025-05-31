@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     font-family: var(--font-family);
     line-height: 1.4;
+    letter-spacing: 0.03em;
     color: var(--color-dark);
     background-color: var(--color-light);
 }
@@ -75,6 +76,10 @@ a {
 }
 
 .text-accent {
+  color: var(--color-accent);
+}
+
+.link-accent {
   color: var(--color-accent);
 }
 

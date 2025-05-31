@@ -1,0 +1,50 @@
+@use '../helpers' as *; 
+
+.conaction {
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url('/images/conaction-bg.jpg') center/cover no-repeat;
+
+  &__main {
+    @include flex-center;
+
+    flex-direction: column;
+    gap: fluid(50, 10);
+    padding-block: fluid(150, 50);
+    color: var(--color-light);
+  }
+  
+  &__title { 
+    color: var(--color-light);
+  }
+
+  &__wrapper {
+    @include flex-center;
+
+    flex-direction: column;
+    gap: fluid(20, 15);
+  }
+
+  &__form {
+    &-input {
+      width: fluid(850, 250);
+      height: fluid(88, 32);
+      padding-inline: fluid(30, 10);
+      color: var(--color-light);
+      background-color: transparent;
+      border: rem(2) solid var(--color-light);
+      border-radius: var(--border-radius-small);
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      
+
+      &:focus {
+        border-color: var(--color-accent);
+        outline: 0;
+      }
+
+      &::placeholder {
+        color: var(--color-light);
+      }
+    }
+  }
+}

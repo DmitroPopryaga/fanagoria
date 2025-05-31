@@ -58,11 +58,12 @@
             </button>
         </div>
     </header>
+
     <main>
-        <section class="search" aria-labelledby="hero-title">
+        <section class="search">
             <div class="search__main container">
                 <div class="search__body">
-                    <h1 class="search__title" id="hero-title">Добре дошли в&nbsp<span class="text-accent">fanagoria</span>travel</h1>
+                    <h1 class="search__title" id="hero-title">Добре дошли в<br><span class="text-accent">fanagoria&nbsp</span>travel</h1>
                     <p class="search__subtitle">Открий своята следваща дестинация</p>
                 </div>
                 <div class="search__select">
@@ -95,10 +96,419 @@
                 </div>
             </div>
         </section>
+
+        <section class="services container">
+            <div class="services__header">
+                <a href="#" class="services__header-link link-accent h3">Научи повече за нашите услуги</a>
+                <h2 class="services__header-title">Услуги които предлагаме</h2>
+            </div>
+            <div class="services__body">
+                <a href="#" class="services__link">
+                    <img 
+                        src="/images/services/1.jpg" 
+                        alt="" 
+                        class="services__image"
+                        width="400" height="300" loading="lazy"
+                    >
+                </a>
+                <a href="#" class="services__link">
+                    <img 
+                        src="/images/services/2.jpg" 
+                        alt="" 
+                        class="services__image"
+                        width="400" height="300" loading="lazy"
+                    >
+                </a>                
+                <a href="#" class="services__link">
+                    <img 
+                        src="/images/services/3.jpg" 
+                        alt="" 
+                        class="services__image"
+                        width="400" height="300" loading="lazy"
+                    >
+                </a>                
+                <a href="#" class="services__link">
+                    <img 
+                        src="/images/services/1.jpg" 
+                        alt="" 
+                        class="services__image"
+                        width="400" height="300" loading="lazy"
+                    >
+                </a>
+            </div>
+            <div class="services__footer container-wide">
+                <button 
+                    class="services__button button button-accent"
+                    type="button"
+                >
+                    Разгледай всички услуги
+                </button>
+                <button 
+                    class="services__button button"
+                    type="button"                  
+                > 
+                    Свържи се с нас
+                </button>
+            </div>
+        </section>
+
+        <section class="special container">
+            <h2 class="special__title"> Специалните ни предложения</h2>
+            <div class="special__menu">
+                <a href="#" class="special__menu-link" style="grid-area: box-2">
+                    <img 
+                        src="/images/special/1.jpg" 
+                        alt="" 
+                        class="special__menu-image"
+                        width="700" height="300" loading="lazy"
+                    >
+                    <div class="special__menu-item">Италия</div>
+                </a>
+                <a href="#" class="special__menu-link" style="grid-area: box-3">
+                    <img 
+                        src="/images/special/2.jpg" 
+                        alt="" 
+                        class="special__menu-image"
+                        width="700" height="300" loading="lazy"
+                    >
+                    <div class="special__menu-item">Турция <br>
+                        <div class="special__menu-info hidden-mobile">Повече инфо
+                            <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.3568 10.176L15.9282 5.60457M15.9282 5.60457L11.3568 1M15.9282 5.60457L1.07108 5.60457" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="special__menu-link" style="grid-area: box-1">
+                    <img 
+                        src="/images/special/3.jpg" 
+                        alt="" 
+                        class="special__menu-image"
+                        width="700" height="300" loading="lazy"
+                    >
+                    <div class="special__menu-item">Париж</div>
+                </a>
+                <a href="#" class="special__menu-link" style="grid-area: box-4">
+                    <img 
+                        src="/images/special/4.jpg" 
+                        alt="" 
+                        class="special__menu-image"
+                        width="700" height="300" loading="lazy"
+                    >
+                    <div class="special__menu-item">Исландия</div>
+                </a>
+                <a href="#" class="special__menu-link" style="grid-area: box-5">
+                    <img 
+                        src="/images/special/5.jpg" 
+                        alt="" 
+                        class="special__menu-image"
+                        width="700" height="300" loading="lazy"
+                    >
+                    <div class="special__menu-item">Африка</div>
+                </a>
+            </div>
+        </section>
+
+        <section class="offer container">
+            <div class="offer__header">
+                <a href="#" class="offer__header-link text-accent">Нови оферти от Fanagoria Travel</a>
+                <div class="offer__header-menu">
+                    <h2 class="offer__header-menu--title">Нашите Нови оферти</h2>
+                    <button class="offer__header-menu--button button button-accent hidden-mobile">Виж всички</button>
+                </div>
+            </div>
+            <div class="offer__body">
+                <div class="offer__body-item">
+                    <div class="offer__body-inner">
+                        <div class="offer__body-like">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 1C23.5555 1 26.3338 3.76664 26.334 7.33301C26.334 9.51758 25.3575 11.5849 23.4346 13.9375C21.9841 15.7121 20.0545 17.5797 17.7236 19.7236L15.2617 21.9658L15.2607 21.9668L14 23.1143L12.7402 21.9668L12.7383 21.9658L10.2773 19.7236C7.94647 17.5797 6.01694 15.7121 4.56641 13.9375C2.64344 11.5849 1.66699 9.51758 1.66699 7.33301C1.66716 3.76675 4.44469 1.00017 8 1C10.0177 1 11.9708 1.94466 13.2412 3.4248L14 4.30859L14.7588 3.4248C16.0291 1.94473 17.9824 1.0001 20 1Z" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <img
+                            src="/images/offer/1.jpg"
+                            alt=""
+                            class="offer__body-image"
+                            width="410" height="300" loading="lazy">
+                    </div>
+                    <div class="offer__body-wrapper">
+                        <h4 class="offer__body-title">Екскурзия до Белгия, Нидерландия и Люксембург</h4>
+                        <div class="offer__body-info">
+                            <div class="offer__body-info--date">6 дни / 5 нощувки</div>
+                            <div class="offer__body-info--transport">Със самолет</div>
+                        </div>
+                        <div class="offer__body-price">
+                            <a href="#" class="offer__body-price--date">Виж дати</a>
+                            <div class="offer__body-price--cost text-accent">1680лв</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer__body-item">
+                    <div class="offer__body-inner">
+                        <div class="offer__body-like">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 1C23.5555 1 26.3338 3.76664 26.334 7.33301C26.334 9.51758 25.3575 11.5849 23.4346 13.9375C21.9841 15.7121 20.0545 17.5797 17.7236 19.7236L15.2617 21.9658L15.2607 21.9668L14 23.1143L12.7402 21.9668L12.7383 21.9658L10.2773 19.7236C7.94647 17.5797 6.01694 15.7121 4.56641 13.9375C2.64344 11.5849 1.66699 9.51758 1.66699 7.33301C1.66716 3.76675 4.44469 1.00017 8 1C10.0177 1 11.9708 1.94466 13.2412 3.4248L14 4.30859L14.7588 3.4248C16.0291 1.94473 17.9824 1.0001 20 1Z" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <img
+                            src="/images/offer/2.jpg"
+                            alt=""
+                            class="offer__body-image"
+                            width="410" height="300" loading="lazy">
+                    </div>
+                    <div class="offer__body-wrapper">
+                        <h4 class="offer__body-title">Екскурзия до Белгия, Нидерландия и Люксембург</h4>
+                        <div class="offer__body-info">
+                            <div class="offer__body-info--date">6 дни / 5 нощувки</div>
+                            <div class="offer__body-info--transport">Със самолет</div>
+                        </div>
+                        <div class="offer__body-price">
+                            <a href="#" class="offer__body-price--date">Виж дати</a>
+                            <div class="offer__body-price--cost text-accent">1680лв</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer__body-item">
+                    <div class="offer__body-inner">
+                        <div class="offer__body-like">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 1C23.5555 1 26.3338 3.76664 26.334 7.33301C26.334 9.51758 25.3575 11.5849 23.4346 13.9375C21.9841 15.7121 20.0545 17.5797 17.7236 19.7236L15.2617 21.9658L15.2607 21.9668L14 23.1143L12.7402 21.9668L12.7383 21.9658L10.2773 19.7236C7.94647 17.5797 6.01694 15.7121 4.56641 13.9375C2.64344 11.5849 1.66699 9.51758 1.66699 7.33301C1.66716 3.76675 4.44469 1.00017 8 1C10.0177 1 11.9708 1.94466 13.2412 3.4248L14 4.30859L14.7588 3.4248C16.0291 1.94473 17.9824 1.0001 20 1Z" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <img
+                            src="/images/offer/1.jpg"
+                            alt=""
+                            class="offer__body-image"
+                            width="410" height="300" loading="lazy">
+                    </div>
+                    <div class="offer__body-wrapper">
+                        <h4 class="offer__body-title">Екскурзия до Белгия, Нидерландия и Люксембург</h4>
+                        <div class="offer__body-info">
+                            <div class="offer__body-info--date">6 дни / 5 нощувки</div>
+                            <div class="offer__body-info--transport">Със самолет</div>
+                        </div>
+                        <div class="offer__body-price">
+                            <a href="#" class="offer__body-price--date">Виж дати</a>
+                            <div class="offer__body-price--cost text-accent">1680лв</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer__body-item">
+                    <div class="offer__body-inner">
+                        <div class="offer__body-like">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 1C23.5555 1 26.3338 3.76664 26.334 7.33301C26.334 9.51758 25.3575 11.5849 23.4346 13.9375C21.9841 15.7121 20.0545 17.5797 17.7236 19.7236L15.2617 21.9658L15.2607 21.9668L14 23.1143L12.7402 21.9668L12.7383 21.9658L10.2773 19.7236C7.94647 17.5797 6.01694 15.7121 4.56641 13.9375C2.64344 11.5849 1.66699 9.51758 1.66699 7.33301C1.66716 3.76675 4.44469 1.00017 8 1C10.0177 1 11.9708 1.94466 13.2412 3.4248L14 4.30859L14.7588 3.4248C16.0291 1.94473 17.9824 1.0001 20 1Z" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <img
+                            src="/images/offer/3.jpg"
+                            alt=""
+                            class="offer__body-image"
+                            width="410" height="300" loading="lazy">
+                    </div>
+                    <div class="offer__body-wrapper">
+                        <h4 class="offer__body-title">Екскурзия до Белгия, Нидерландия и Люксембург</h4>
+                        <div class="offer__body-info">
+                            <div class="offer__body-info--date">6 дни / 5 нощувки</div>
+                            <div class="offer__body-info--transport">Със самолет</div>
+                        </div>
+                        <div class="offer__body-price">
+                            <a href="#" class="offer__body-price--date">Виж дати</a>
+                            <div class="offer__body-price--cost text-accent">1680лв</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer__body-item">
+                    <div class="offer__body-inner">
+                        <div class="offer__body-like">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 1C23.5555 1 26.3338 3.76664 26.334 7.33301C26.334 9.51758 25.3575 11.5849 23.4346 13.9375C21.9841 15.7121 20.0545 17.5797 17.7236 19.7236L15.2617 21.9658L15.2607 21.9668L14 23.1143L12.7402 21.9668L12.7383 21.9658L10.2773 19.7236C7.94647 17.5797 6.01694 15.7121 4.56641 13.9375C2.64344 11.5849 1.66699 9.51758 1.66699 7.33301C1.66716 3.76675 4.44469 1.00017 8 1C10.0177 1 11.9708 1.94466 13.2412 3.4248L14 4.30859L14.7588 3.4248C16.0291 1.94473 17.9824 1.0001 20 1Z" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <img
+                            src="/images/offer/1.jpg"
+                            alt=""
+                            class="offer__body-image"
+                            width="410" height="300" loading="lazy">
+                    </div>
+                    <div class="offer__body-wrapper">
+                        <h4 class="offer__body-title">Екскурзия до Белгия, Нидерландия и Люксембург</h4>
+                        <div class="offer__body-info">
+                            <div class="offer__body-info--date">6 дни / 5 нощувки</div>
+                            <div class="offer__body-info--transport">Със самолет</div>
+                        </div>
+                        <div class="offer__body-price">
+                            <a href="#" class="offer__body-price--date">Виж дати</a>
+                            <div class="offer__body-price--cost text-accent">1680лв</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer__body-item">
+                    <div class="offer__body-inner">
+                        <div class="offer__body-like">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 1C23.5555 1 26.3338 3.76664 26.334 7.33301C26.334 9.51758 25.3575 11.5849 23.4346 13.9375C21.9841 15.7121 20.0545 17.5797 17.7236 19.7236L15.2617 21.9658L15.2607 21.9668L14 23.1143L12.7402 21.9668L12.7383 21.9658L10.2773 19.7236C7.94647 17.5797 6.01694 15.7121 4.56641 13.9375C2.64344 11.5849 1.66699 9.51758 1.66699 7.33301C1.66716 3.76675 4.44469 1.00017 8 1C10.0177 1 11.9708 1.94466 13.2412 3.4248L14 4.30859L14.7588 3.4248C16.0291 1.94473 17.9824 1.0001 20 1Z" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <img
+                            src="/images/offer/4.jpg"
+                            alt=""
+                            class="offer__body-image"
+                            width="410" height="300" loading="lazy">
+                    </div>
+                    <div class="offer__body-wrapper">
+                        <h4 class="offer__body-title">Екскурзия до Белгия, Нидерландия и Люксембург</h4>
+                        <div class="offer__body-info">
+                            <div class="offer__body-info--date">6 дни / 5 нощувки</div>
+                            <div class="offer__body-info--transport">Със самолет</div>
+                        </div>
+                        <div class="offer__body-price">
+                            <a href="#" class="offer__body-price--date">Виж дати</a>
+                            <div class="offer__body-price--cost text-accent">1680лв</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback container">
+            <h2 class="feedback__title"> 
+                <span>отзиви които</span>
+                <span class="text-accent">говорят за нас</span>
+            </h2>
+            <div class="feedback__body">
+                <div class="feedback__inner">
+                    <div class="feedback__header">
+                        <div class="feedback__header-author">Иван Петров</div>
+                        <div class="feedback__header-star">
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="feedback__country">България</span>
+                    <p class="feedback__comment">"Посетихме Тайланд и бяхме завладени от невероятната комбинация от култура и природа. Плажовете бяха райска находка, а храната - истинско удоволствие за вкусовете!"</p>
+                </div>
+                <div class="feedback__inner">
+                    <div class="feedback__header">
+                        <div class="feedback__header-author">Иван Петров</div>
+                        <div class="feedback__header-star">
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="feedback__country">България</span>
+                    <p class="feedback__comment">"Посетихме Тайланд и бяхме завладени от невероятната комбинация от култура и природа. Плажовете бяха райска находка, а храната - истинско удоволствие за вкусовете!"</p>
+                </div>
+                <div class="feedback__inner">
+                    <div class="feedback__header">
+                        <div class="feedback__header-author">Иван Петров</div>
+                        <div class="feedback__header-star">
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.04894 0.927052C9.3483 0.00574108 10.6517 0.00573985 10.9511 0.92705L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.5501 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z" fill="#F3B03D"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="feedback__country">България</span>
+                    <p class="feedback__comment">"Посетихме Тайланд и бяхме завладени от невероятната комбинация от култура и природа. Плажовете бяха райска находка, а храната - истинско удоволствие за вкусовете!"</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="conaction">
+            <div class="conaction__main container">
+                <h2 class="conaction__title">Имате 
+                    <span class="text-accent">&nbspвъпроси?</span>
+                </h2>
+                <div class="conaction__wrapper">
+                    <p class="conaction__subtitle h3">Оставете ни Вашият e-mail и ние ще се свържем с Вас</p>
+                    <form class="conaction__form">
+                        <div class="conaction__form-field">
+                            <label for="email" class="field__label"></label>
+                            <input
+                                class="conaction__form-input"
+                                id="email"
+                                name="email"
+                                placeholder="Вашият e-mail"
+                                type="email"
+                            >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+    
     <footer class="footer">
         <div class="footer__inner">
-            <div class="footer__body">
+            <div class="footer__body container">
                 <div class="footer__soc1als soc1als">
                     <a href="/" class="soc1als__logo">
                         <img 
