@@ -1,6 +1,7 @@
 @use '../helpers' as *; 
 
 .conaction {
+  margin-top: fluid(75, 25);
   background: 
   linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   url('/images/conaction-bg.jpg') center/cover no-repeat;

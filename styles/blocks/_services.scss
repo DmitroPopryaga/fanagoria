@@ -13,17 +13,57 @@
   }
 
   &__body {
-    display: flex;  
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: fluid(30, 20);
     scroll-snap-type: x mandatory;
-    overflow-x: scroll;
+    overflow-x: scroll; 
   }
 
-  &__image {
-    scroll-snap-align: start;
-    flex-shrink: 0;
+  &__wrapper {
+    position: relative;
   }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: fluid(35, 25);
+    padding: fluid(20, 10);
+    width: fluid(400, 200);
+    height: fluid(300, 150);
+    color: var(--color-light);
+    scroll-snap-align: start;
+  }
+
+  &__label {
+    @include fluid-text(14, 8);
+
+    padding: fluid(10, 5);
+    max-width: fluid(170, 90);
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: var(--border);
+    border-radius: rem(5);
+  }
+
+  &__link {
+    @include fluid-text(26, 14);
+
+
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    border-top: var(--border);
+    }
+  
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+  }
+
 
   &__footer {
     @include flex-center;
