@@ -51,7 +51,7 @@
       color: var(--color-light);
     }
     
-    &-items {
+    &-menu {
       @include fluid-text(24, 18);
       
       
@@ -76,6 +76,11 @@
       background-size: rem(12) rem(8);
     }
 
+    &-item {
+      color: var(--color-dark);
+      background-color: var(--color-light);
+    }
+    
     &-button {
       @include fluid-text(20, 16);
 
@@ -93,6 +98,5 @@
     }
   }
 }
-
 
 

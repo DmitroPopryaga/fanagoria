@@ -5,33 +5,30 @@
     @include flex-center;
 
     display: flex;
-    text-align: center;
+    justify-content: center;
+    gap: rem(15);
     padding-top: fluid(150, 50);
     padding-bottom: fluid(50, 20);
 
+
+    @include laptop {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__menu {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: fluid(30, 10);
     grid-auto-flow: dense;
     grid-template-areas: 
-      "box-2 box-2 box-3 box-1"
-      "box-4 box-5 box-5 box-1";
-
-      @include tablet {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-          "box-2 box-1 box-1"
-          "box-3 box-1 box-1"
-          "box-5 box-5 box-4";
-      }
+      "box-2 box-2 box-2 box-3 box-3 box-1 box-1"
+      "box-4 box-4 box-5 box-5 box-5 box-1 box-1";
 
       @include mobile {
         display: flex;
         flex-direction: column;
-        justify-content: stretch;
       }
 
       &-link {
@@ -51,6 +48,11 @@
 
         &:hover::after {
           opacity: 1;
+        }
+
+        @include mobile {
+          width: 100%;
+          max-height: rem(500);
         }
 
       }
