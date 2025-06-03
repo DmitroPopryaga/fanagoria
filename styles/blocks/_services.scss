@@ -17,6 +17,7 @@
     justify-content: space-around;
     align-items: center;
     gap: fluid(30, 20);
+    padding-bottom: fluid(25, 10);
     scroll-snap-type: x mandatory;
     overflow-x: scroll; 
   }
@@ -69,6 +70,6 @@
     @include flex-center;
 
     gap: fluid(40, 15);
-    padding-top: fluid(50, 20);
+    padding-top: fluid(25, 10);
   }
 }

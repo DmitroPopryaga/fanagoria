@@ -290,6 +290,10 @@ svg * {
   }
 }
 
+html.is-lock {
+  overflow: hidden;
+}
+
 body {
   font-size: clamp(0.875rem, 0.7873036649rem + 0.4188481675vw, 1.125rem);
   display: flex;
@@ -497,8 +501,6 @@ a[class] {
     padding: 1rem;
     background-color: var(--color-dark);
   }
-}
-@media (width <= 47.99875rem) {
   .header__overlay:not(.is-active) {
     opacity: 0;
     visibility: hidden;
@@ -561,6 +563,7 @@ a[class] {
   justify-content: space-around;
   align-items: center;
   gap: clamp(1.25rem, 1.0307591623rem + 1.0471204188vw, 1.875rem);
+  padding-bottom: clamp(0.625rem, 0.2961387435rem + 1.5706806283vw, 1.5625rem);
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
 }
@@ -603,7 +606,7 @@ a[class] {
   justify-content: center;
   align-items: center;
   gap: clamp(0.9375rem, 0.3893979058rem + 2.6178010471vw, 2.5rem);
-  padding-top: clamp(1.25rem, 0.5922774869rem + 3.1413612565vw, 3.125rem);
+  padding-top: clamp(0.625rem, 0.2961387435rem + 1.5706806283vw, 1.5625rem);
 }
 
 .search {

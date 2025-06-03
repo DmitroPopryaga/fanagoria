@@ -8,6 +8,7 @@
     padding-inline: rem(55);
     border-bottom: var(--border);
     
+    
 
     @include tablet {
         padding-block: rem(20);
@@ -40,9 +41,7 @@
             row-gap: 5rem;
             padding: 1rem;
             background-color: var(--color-dark);
-        }
 
-        @include mobile {
             &:not(.is-active) {
                 @include hide;
 
@@ -55,7 +54,7 @@
         @include mobile {
             overflow-y: auto;
         }
-
+        
         &-list {
             display: flex;
             align-items: center;
