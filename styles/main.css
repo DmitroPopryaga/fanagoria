@@ -887,7 +887,8 @@ a[class] {
   left: 88%;
   translate: -50% -50%;
   color: var(--color-light);
-  transition: transform 0.3s ease, color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .offer__body-like.is-active svg * {

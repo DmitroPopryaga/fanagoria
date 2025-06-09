@@ -1,75 +1,60 @@
 class Like {
-  selectors = {
+  static selectors = {
     root: '[data-js-like]',
   }
 
-  stateClasses = {
+  static stateClasses = {
     isActive: 'is-active',
   }
 
-  constructor() {
-    this.rootElement = document.querySelector(this.selectors.root)
-    
-    // Проверка наличия элемента
-    if (!this.rootElement) {
-      console.error(`Element with selector '${this.selectors.root}' not found!`)
-      return
-    }
-
-    // Привязываем контекст
-    this.onLikeClick = this.onLikeClick.bind(this)
-    
-    this.bindEvents()
+  constructor(element) {
+    this.rootElement = element;
+    this.onLikeClick = this.onLikeClick.bind(this);
+    this.bindEvents();
+    this.restoreState();
   }
 
   bindEvents() {
-    this.rootElement.addEventListener('click', this.onLikeClick)
+    this.rootElement.addEventListener('click', this.onLikeClick);
   }
 
   onLikeClick(e) {
-    e.preventDefault() // Предотвращаем стандартное поведение, если нужно
-    this.rootElement.classList.toggle(this.stateClasses.isActive)
-    
-    // Дополнительная логика может быть здесь
-    this.saveLikeState()
-    this.updateLikeCounter()
+    e.preventDefault();
+    this.toggleState();
+  }
+
+  toggleState() {
+    this.rootElement.classList.toggle(Like.stateClasses.isActive);
+    this.saveLikeState();
   }
 
   saveLikeState() {
-    // Сохранение состояния в localStorage или на сервер
-    const isActive = this.rootElement.classList.contains(this.stateClasses.isActive)
-    localStorage.setItem('likeState', isActive)
+    const itemId = this.rootElement.dataset.likeId || 'default';
+    const isActive = this.rootElement.classList.contains(Like.stateClasses.isActive);
+    localStorage.setItem(`likeState_${itemId}`, isActive);
   }
 
-  updateLikeCounter() {
-    // Логика обновления счетчика лайков
-    const counter = this.rootElement.querySelector('.like-counter')
-    if (counter) {
-      const currentCount = parseInt(counter.textContent) || 0
-      const newCount = this.rootElement.classList.contains(this.stateClasses.isActive) 
-        ? currentCount + 1 
-        : currentCount - 1
-      counter.textContent = Math.max(0, newCount) // Не даем уйти в минус
+  restoreState() {
+    const itemId = this.rootElement.dataset.likeId || 'default';
+    const isActive = localStorage.getItem(`likeState_${itemId}`) === 'true';
+    if (isActive) {
+      this.rootElement.classList.add(Like.stateClasses.isActive);
     }
   }
 
   destroy() {
-    // Очистка событий при необходимости
-    this.rootElement.removeEventListener('click', this.onLikeClick)
+    this.rootElement.removeEventListener('click', this.onLikeClick);
   }
 
-  async saveLikeState() {
-    const isActive = this.rootElement.classList.contains(this.stateClasses.isActive)
-    try {
-      const response = await fetch('/api/like', {
-        method: 'POST',
-        body: JSON.stringify({ liked: isActive })
-      })
-      // Обработка ответа
-    } catch (error) {
-      console.error('Like error:', error)
-    }
-  } 
+  static initAll(selector = this.selectors.root) {
+    const elements = document.querySelectorAll(selector);
+    return Array.from(elements).map(element => new Like(element));
+  }
 }
+
+// Инициализация всех лайков на странице
+document.addEventListener('DOMContentLoaded', () => {
+  Like.initAll();
+});
 
 export default Like
