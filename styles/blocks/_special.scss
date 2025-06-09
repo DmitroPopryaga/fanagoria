@@ -23,8 +23,8 @@
     gap: fluid(30, 10);
     grid-auto-flow: dense;
     grid-template-areas: 
-      "box-2 box-2 box-2 box-3 box-3 box-1 box-1"
-      "box-4 box-4 box-5 box-5 box-5 box-1 box-1";
+      "box-1 box-1 box-1 box-2 box-2 box-3 box-3"
+      "box-4 box-4 box-5 box-5 box-5 box-3 box-3";
 
       @include mobile {
         display: flex;
@@ -59,6 +59,10 @@
 
       &-image {
         border-radius: var(--border-radius-big);
+
+        @include mobile {
+          height: fluid(700, 300);
+        }
       }
 
       &-item {

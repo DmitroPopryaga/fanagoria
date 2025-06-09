@@ -18,6 +18,10 @@ body {
     background-color: var(--color-light);
 }
 
+main {
+  flex-grow: 1
+}
+
 h1, .h1 {
     @include fluid-text(88, 32);
     line-height: 1.25;
