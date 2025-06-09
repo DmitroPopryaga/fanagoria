@@ -1,5 +1,7 @@
 import Header from './Header.js'
-import Slider from './Slider.js'
+import MouseScrollX from './MouseScrollX.js'
+import Like from './Like.js'
 
 new Header()
-new Slider()
+new MouseScrollX()
+new Like()

@@ -50,9 +50,14 @@
       left: 88%;
       translate: -50% -50%;
       color: var(--color-light);
-
-      &:active {
-        fill: var(--color-accent);
+      transition: transform 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+  
+      &.is-active {
+        svg * {
+          fill: var(--color-accent);
+          stroke: var(--color-accent);
+        }
       }
     }
 
