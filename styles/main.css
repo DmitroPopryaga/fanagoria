@@ -659,6 +659,7 @@ a[class] {
 }
 .search__select-group {
   font-size: clamp(1.5rem, 1.4123036649rem + 0.4188481675vw, 1.75rem);
+  max-width: 21.875rem;
 }
 .search__select-text {
   color: var(--color-light);
@@ -794,6 +795,8 @@ a[class] {
 }
 .special__menu-image {
   border-radius: var(--border-radius-big);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (width <= 47.99875rem) {
   .special__menu-image {

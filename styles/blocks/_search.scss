@@ -45,6 +45,8 @@
 
     &-group {
       @include fluid-text(28, 24);
+
+      max-width: rem(350);
     }
 
     &-text {

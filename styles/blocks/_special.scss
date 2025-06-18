@@ -59,6 +59,7 @@
 
       &-image {
         border-radius: var(--border-radius-big);
+        object-fit: cover;
 
         @include mobile {
           height: fluid(700, 300);

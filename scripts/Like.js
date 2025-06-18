@@ -1,14 +1,16 @@
+const rootSelector = '[data-js-like]'
+
 class Like {
-  static selectors = {
-    root: '[data-js-like]',
+  selectors = {
+    root: rootSelector,
   }
 
   static stateClasses = {
     isActive: 'is-active',
   }
 
-  constructor(element) {
-    this.rootElement = element;
+  constructor(rootElement) {
+    this.rootElement = rootElement;
     this.onLikeClick = this.onLikeClick.bind(this);
     this.bindEvents();
     this.restoreState();
@@ -45,16 +47,18 @@ class Like {
   destroy() {
     this.rootElement.removeEventListener('click', this.onLikeClick);
   }
+}
 
-  static initAll(selector = this.selectors.root) {
-    const elements = document.querySelectorAll(selector);
-    return Array.from(elements).map(element => new Like(element));
+class LikeCollection {
+  constructor() {
+    this.init()
+  }
+
+  init() {
+    document.querySelectorAll(rootSelector).forEach((element) => {
+      new Like(element)
+    })
   }
 }
 
-// Инициализация всех лайков на странице
-document.addEventListener('DOMContentLoaded', () => {
-  Like.initAll();
-});
-
-export default Like
+export default LikeCollection
