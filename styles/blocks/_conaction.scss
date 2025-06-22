@@ -23,7 +23,11 @@
     @include flex-center;
 
     flex-direction: column;
-    gap: fluid(20, 15);
+    gap: rem(20);
+
+    @include mobile {
+      gap: rem(15);
+    }
   }
 
   &__form {

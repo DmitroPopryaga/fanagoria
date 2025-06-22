@@ -16,10 +16,13 @@
     &-menu {
       display: flex;
       justify-content: space-between;
-      padding-top: fluid(15, 7);
+      align-items: end;
+      column-gap: 1rem;
+      padding-top: rem(15);
 
       @include mobile {
         justify-content: center;
+        padding-top: rem(7);
       }
     }
   }
@@ -42,6 +45,7 @@
       width: 100%;
       place-self: center;
       border-radius: rem(15) rem(15) 0 0;
+      user-select: none;
     }
 
     &-like {
@@ -64,7 +68,12 @@
     }
 
     &-wrapper {
-      padding-inline: fluid(15, 3);
+      padding-inline: rem(15);
+      padding-top: rem(3);
+
+      @include mobile {
+        padding-inline: rem(3);
+      }
     }
 
     &-info {
@@ -72,9 +81,13 @@
 
       display: flex;
       justify-content: space-between;
-      padding-top: fluid(15, 10);
+      padding-top: rem(15);
       color: var(--color-gray);
       border-top: rem(1) solid var(--color-gray);
+
+      @include mobile {
+        adding-top: rem(10);
+      }
     }
 
     &-price {
@@ -83,8 +96,12 @@
       display: flex;
       justify-content: space-between;
       padding-top: fluid(50, 15);
-      padding-bottom: fluid(15, 5);
+      padding-bottom: rem(15);
       font-weight: 500;
+
+      @include mobile {
+        padding-bottom: rem(5);
+      }
 
       &--cost {
         @include fluid-text (24, 10);

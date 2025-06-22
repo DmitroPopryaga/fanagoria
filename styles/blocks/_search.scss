@@ -8,7 +8,7 @@
   &__main {
     @include flex-center;
     flex-direction: column;
-    row-gap: rem(30);
+    row-gap: rem(15);
   }
 
   &__body {
@@ -16,13 +16,18 @@
   }
 
   &__title {
-    padding-top: rem(249);
+    padding-top: fluid(249, 133);
   }  
 
   &__subtitle {
     @include fluid-text(32, 20);
 
+    padding-top: rem(30);
     color: var(--color-light);
+
+    @include mobile {
+      padding-top: rem(10);
+    }
   }
 
   &__select {
@@ -31,7 +36,7 @@
     align-items: self-end;
     column-gap: rem(30);
     padding: rem(30) rem(50);
-    margin-bottom: rem(223);
+    margin-bottom: fluid(223, 92);
     color: var(--color-light);
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: var(--border-radius-small);

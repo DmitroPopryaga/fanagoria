@@ -5,11 +5,15 @@
     display: flex;
     justify-content: center;
     padding-top: fluid(150, 50);  
-    gap: fluid(15, 0);
+    gap: rem(15);
 
     @include tablet {
       flex-direction: column;
       align-items: center;
+    }
+
+    @include mobile {
+      gap: 0;
     }
   }
 
@@ -17,7 +21,7 @@
     display: flex;
     gap: fluid(30, 20);
     padding-top: fluid(50, 20);
-    padding-bottom: fluid(75, 25);
+    padding-bottom: fluid(30, 20);
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
   }
@@ -50,9 +54,13 @@
   &__country {
     @include fluid-text(16, 8);
 
-    padding-top: fluid(10, 2);
+    padding-top: rem(10);
     color: var(--color-gray);
     font-weight: 500;
+
+    @include mobile {
+      padding-top: rem(2);
+    }
   }
 
   &__comment {

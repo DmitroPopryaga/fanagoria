@@ -4,12 +4,15 @@
   &__header {
     @include flex-center;
 
-    display: flex;
     flex-direction: column;
-    row-gap: fluid(15, 7);
+    row-gap: rem(15);
     padding-top: fluid(75, 30);
     padding-bottom: fluid(50, 20);
     text-align: center;
+
+    @include mobile {
+      row-gap: rem(7);
+    }
   }
 
   &__body {
@@ -37,22 +40,30 @@
     flex-direction: column;
     justify-content: end;
     gap: fluid(35, 25);
-    padding: fluid(20, 10);
+    padding: rem(20);
     width: fluid(400, 200);
     height: fluid(300, 150);
     color: var(--color-light);
     scroll-snap-align: start;
+
+    @include mobile {
+      padding: rem(10);
+    }
   }
 
   &__label {
     @include fluid-text(14, 8);
 
-    padding: fluid(10, 5);
+    padding: rem(10);
     max-width: fluid(170, 90);
     text-transform: uppercase;
     white-space: nowrap;
     border: var(--border);
     border-radius: rem(5);
+
+    @include mobile {
+      padding: rem(5);
+    }
   }
 
   &__link {

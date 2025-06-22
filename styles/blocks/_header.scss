@@ -4,17 +4,15 @@
     position: absolute;
     z-index: 100;
     width: 100%;
-    padding: rem(20) rem(35);
+    padding: rem(30) rem(35);
     border-bottom: var(--border);
     
-    
-
     @include tablet {
-        padding: rem(10) rem(25);
+        padding: rem(20) rem(25);
     }
 
     @include mobile {
-        padding: rem(5) rem(15);
+        padding: rem(10) rem(15);
     }
 
     &__inner {
@@ -55,11 +53,7 @@
         &-list {
             display: flex;
             align-items: center;
-            column-gap: fluid(20, 10);
-
-            @include tablet {
-                // column-gap: rem(10);
-            }
+            column-gap: rem(20);
 
             @include mobile {
                 flex-direction: column;

@@ -1,12 +1,12 @@
 @use '../helpers' as *;
 
 .button {
-  @include fluid-text(20, 19);
+  @include fluid-text(20, 14);
 
   padding-block: fluid(20, 10);
   padding-inline: fluid(40, 15);
   background-color: var(--color-light);
-  font-size: 600;
+  font-weight: 600;
   text-transform: uppercase;
   border: rem(1) solid var(--color-dark);
   border-radius: var(--border-radius-small);
