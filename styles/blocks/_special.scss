@@ -1,15 +1,15 @@
 @use '../helpers' as *;
 
 .special {
+  padding-block: fluid(75, 25);
+
   &__title {
     @include flex-center;
 
     display: flex;
     justify-content: center;
     gap: rem(15);
-    padding-top: fluid(150, 50);
     padding-bottom: fluid(50, 20);
-
 
     @include laptop {
       flex-direction: column;

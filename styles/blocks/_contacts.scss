@@ -1,6 +1,6 @@
 @use '../helpers' as *; 
 
-.conaction {
+.contacts {
   margin-top: fluid(75, 25);
   background: 
   linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -15,7 +15,8 @@
     color: var(--color-light);
   }
   
-  &__title { 
+  &__title {
+    text-align: center;
     color: var(--color-light);
   }
 
@@ -23,6 +24,7 @@
     @include flex-center;
 
     flex-direction: column;
+    text-align: center;
     gap: rem(20);
 
     @include mobile {

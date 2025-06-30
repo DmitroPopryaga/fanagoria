@@ -1,0 +1,47 @@
+@use '../helpers' as *;
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 1rem;
+  width: rem(300);
+  transition-duration: var(--transition-duration);
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  &__input {
+    &:not(:checked) + .radio__emulator::after {
+      opacity: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  &__emulator {
+    @include flex-center;
+    @include square(rem(24));
+
+    position: relative;
+    background-color: var(--color-light);
+    border: var(--border);
+    border-radius: 50%;
+
+    &::after {
+      @include abs-center;
+      @include square(60%);
+
+      content: '';
+      background-color: var(--color-accent);
+      border-radius: inherit;
+      transition-duration: var(--transition-duration);
+    }
+  }
+}
+

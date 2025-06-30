@@ -10,6 +10,7 @@
   text-transform: uppercase;
   border: rem(1) solid var(--color-dark);
   border-radius: var(--border-radius-small);
+  user-select: none;
   transition-duration: var(--transition-duration);
 
     @include hover {

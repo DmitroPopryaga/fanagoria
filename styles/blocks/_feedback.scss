@@ -1,10 +1,11 @@
 @use '../helpers' as *;
 
 .feedback {
+  padding-block: fluid(75, 25);
+
   &__title {
     display: flex;
     justify-content: center;
-    padding-top: fluid(150, 50);  
     gap: rem(15);
 
     @include tablet {
@@ -40,8 +41,12 @@
     display: flex;
     justify-content: space-between;
 
+    @include mobile {
+      flex-direction: column;
+    }
+
     &-author {
-      @include fluid-text(24, 12);
+      @include fluid-text(22, 18);
 
       font-weight: 500;
     }
@@ -52,7 +57,7 @@
   }
 
   &__country {
-    @include fluid-text(16, 8);
+    @include fluid-text(16, 14);
 
     padding-top: rem(10);
     color: var(--color-gray);
@@ -64,7 +69,7 @@
   }
 
   &__comment {
-    @include fluid-text(16, 8);
+    @include fluid-text(16, 14);
 
     padding-block: fluid(30, 10);
     font-weight: 500;

@@ -1,14 +1,15 @@
 @use '../helpers' as *;
 
 .services {
+  padding-block: fluid(75, 25);
+
   &__header {
     @include flex-center;
 
     flex-direction: column;
     row-gap: rem(15);
-    padding-top: fluid(75, 30);
-    padding-bottom: fluid(50, 20);
     text-align: center;
+    padding-bottom: fluid(50,20);
 
     @include mobile {
       row-gap: rem(7);
@@ -22,7 +23,7 @@
     gap: fluid(30, 20);
     padding-bottom: fluid(25, 10);
     scroll-snap-type: x mandatory;
-    overflow-x: scroll; 
+    overflow-x: scroll;
     transform: scale(0.98);
     transition: transform 0.3s ease-in-out;
 
@@ -33,6 +34,11 @@
 
   &__wrapper {
     position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    z-index: -1;
   }
 
   &__inner {
@@ -60,6 +66,7 @@
     white-space: nowrap;
     border: var(--border);
     border-radius: rem(5);
+    user-select: none;
 
     @include mobile {
       padding: rem(5);
@@ -67,26 +74,21 @@
   }
 
   &__link {
-    @include fluid-text(26, 14);
-
+    @include fluid-text(22, 18);
 
     display: flex;
     justify-content: space-between;
     font-weight: 500;
     border-top: var(--border);
+
+    @include hover {
+      color: var(--color-accent);
     }
-  
-
-  &__image {
-    position: absolute;
-    z-index: -1;
   }
-
 
   &__footer {
     @include flex-center;
 
-    gap: fluid(40, 15);
     padding-top: fluid(25, 10);
   }
 }
